@@ -11,12 +11,6 @@
 1. 创建 template、static 文件夹，分别用于放置模板和静态资源
 1. 创建 views.py 
 
-## 创建超级管理员
-
-```
-python manage.py createsuperuser
-```
-
 ## Django 模型
 创建好模型后，生成表结构：
 ```
@@ -24,3 +18,10 @@ python manage.py migrate # 创建全部表结构
 python manage.py migrate app1 # 创建app1的表结构
 python manage.py makemigrations app1 # 如果app中模型发生了变化需要同步
 ```
+
+## 创建超级管理员
+```
+python manage.py createsuperuser
+```
+用户名输入admin，并输入密码 love******
+打开 http://localhost:8888/admin/
